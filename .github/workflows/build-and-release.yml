@@ -1,0 +1,167 @@
+name: Build PS Vita EPUB Reader
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup VitaSDK environment
+      run: |
+        # Install system dependencies
+        sudo apt-get update
+        sudo apt-get install -y build-essential cmake git wget tar python3 python3-pip
+        
+        # Install VitaSDK
+        cd /tmp
+        wget https://github.com/vitasdk/autobuilds/releases/download/master-linux-v1460/vitasdk-x86_64-linux-gnu-2024-08-07_20-24-40.tar.bz2
+        sudo tar -xjf vitasdk-x86_64-linux-gnu-2024-08-07_20-24-40.tar.bz2 -C /usr/local/
+        
+        # Set up environment
+        echo "VITASDK=/usr/local/vitasdk" >> $GITHUB_ENV
+        echo "/usr/local/vitasdk/bin" >> $GITHUB_PATH
+        
+    - name: Verify VitaSDK installation
+      run: |
+        export VITASDK=/usr/local/vitasdk
+        export PATH=$VITASDK/bin:$PATH
+        arm-vita-eabi-gcc --version
+        
+    - name: Install additional dependencies
+      run: |
+        export VITASDK=/usr/local/vitasdk
+        export PATH=$VITASDK/bin:$PATH
+        
+        # Install vita2d and other libraries if needed
+        # Most dependencies should be included with VitaSDK
+        
+    - name: Create placeholder assets
+      run: |
+        # Create minimal placeholder assets since we don't have actual images
+        mkdir -p assets/fonts
+        mkdir -p assets/sample_books
+        mkdir -p sce_sys/livearea/contents
+        
+        # Create placeholder font (we'll use system font as fallback)
+        echo "placeholder" > assets/fonts/default.ttf
+        
+        # Create placeholder images (128x128 PNG for icon)
+        # We'll create simple 1x1 pixel images as placeholders
+        printf '\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00\x80\x00\x00\x00\x80\x08\x02\x00\x00\x00L\\\xf6\x9c\x00\x00\x00\x19tEXtSoftware\x00Adobe ImageReadyq\xc9e<\x00\x00\x00\x0eIDATx\xdac\xf8\x0f\x00\x00\x01\x00\x01\x00\x18\xdd\x8d\xb4\x00\x00\x00\x00IEND\xaeB`\x82' > sce_sys/icon0.png
+        
+        # Create placeholder LiveArea images (960x544)
+        cp sce_sys/icon0.png sce_sys/livearea/contents/bg.png
+        cp sce_sys/icon0.png sce_sys/livearea/contents/startup.png
+        
+    - name: Build project
+      run: |
+        export VITASDK=/usr/local/vitasdk
+        export PATH=$VITASDK/bin:$PATH
+        
+        # Create build directory
+        mkdir -p build
+        cd build
+        
+        # Configure with CMake
+        cmake .. -DCMAKE_TOOLCHAIN_FILE=$VITASDK/share/vita.toolchain.cmake -DCMAKE_BUILD_TYPE=Release
+        
+        # Build the project
+        make -j$(nproc)
+        
+        # Verify VPK was created
+        ls -la *.vpk || echo "No VPK files found"
+        ls -la *.self || echo "No SELF files found"
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: epub-reader-vpk
+        path: |
+          build/*.vpk
+          build/*.self
+        retention-days: 30
+        
+    - name: Create release assets
+      if: github.event_name == 'release'
+      run: |
+        cd build
+        # Create a release package
+        mkdir -p release
+        cp *.vpk release/ 2>/dev/null || echo "No VPK files to copy"
+        cp *.self release/ 2>/dev/null || echo "No SELF files to copy"
+        
+        # Create installation guide
+        cat > release/INSTALL.md << 'EOF'
+        # PlayStation Vita EPUB Reader Installation
+        
+        ## Requirements
+        - PlayStation Vita with HENkaku/Ensō installed
+        - VitaShell file manager
+        - At least 50MB free space
+        
+        ## Installation Steps
+        1. Copy `epub_reader.vpk` to `ux0:/vpk/` on your Vita
+        2. Open VitaShell and navigate to `ux0:/vpk/`
+        3. Press X on `epub_reader.vpk` to install
+        4. Accept extended permissions when prompted
+        5. Return to LiveArea and launch "EPUB Reader"
+        
+        ## Usage
+        - Copy `.epub` files to `ux0:data/epub_reader/books/`
+        - Launch the app and select books from your library
+        - Use D-pad to navigate, X to select, O to go back
+        - L/R triggers for chapter navigation
+        - Triangle to toggle reading UI
+        
+        ## Controls
+        - **D-Pad**: Menu navigation and page scrolling
+        - **X**: Select/confirm
+        - **O**: Back/cancel
+        - **Triangle**: Toggle UI overlay
+        - **L/R**: Previous/next chapter
+        - **START**: Exit application
+        
+        ## Troubleshooting
+        - Ensure EPUB files are valid and not corrupted
+        - Check available storage space
+        - Verify HENkaku/Ensō is properly installed
+        
+        For support, visit: https://github.com/your-username/vita-epub-reader
+        EOF
+        
+    - name: Upload to release
+      if: github.event_name == 'release'
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          build/release/*
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Deploy to Vita (if secrets configured)
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      run: |
+        # Only run if VITA_IP secret is configured
+        if [ -n "${{ secrets.VITA_IP }}" ]; then
+          echo "Deploying to Vita at ${{ secrets.VITA_IP }}"
+          cd build
+          
+          # Upload VPK via curl/FTP
+          if [ -f "epub_reader.vpk" ]; then
+            curl -T epub_reader.vpk "ftp://${{ secrets.VITA_IP }}:1337/ux0:/vpk/" || echo "Upload failed - ensure FTP server is running on Vita"
+          fi
+        else
+          echo "VITA_IP secret not configured, skipping deployment"
+        fi

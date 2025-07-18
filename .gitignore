@@ -1,1 +1,50 @@
-*.epub
+# Build directories
+build/
+build_simple/
+cmake-build-*/
+
+# VPK and generated files
+*.vpk
+*.self
+*.velf
+*.sfo
+*.elf
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Assets that might be large
+assets/fonts/*.ttf
+assets/fonts/*.otf
+assets/sample_books/*.epub
+
+# Keep placeholder files
+!assets/fonts/README.md
+!assets/sample_books/README.md
+!sce_sys/README.md
