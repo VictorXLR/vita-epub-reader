@@ -1,0 +1,1306 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      The target system is: Generic - 1 - armv7-a
+      The host system is: Darwin - 25.0.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: -Wl,-q
+      Id flags:  
+      
+      The output was:
+      4
+      dyld[16197]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: -Wl,-q
+      Id flags: -c 
+      
+      The output was:
+      4
+      dyld[16202]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: -Wl,-q
+      Id flags: -Aa 
+      
+      The output was:
+      4
+      dyld[16204]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: -Wl,-q
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      4
+      dyld[16206]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: -Wl,-q
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      arm-vita-eabi-gcc: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: -Wl,-q
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      4
+      dyld[16209]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      4
+      dyld[16211]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      4
+      dyld[16213]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      4
+      dyld[16215]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      4
+      dyld[16217]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      arm-vita-eabi-gcc: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      4
+      dyld[16220]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      /usr/local/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/ld: /usr/local/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib/crt0.o: in function `_start':
+      crt0.c:(.text._start+0x56): undefined reference to `main'
+      collect2: error: ld returned 1 exit status
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      arm-vita-eabi-gcc: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: -Wl,-q
+      Id flags:  
+      
+      The output was:
+      4
+      dyld[16230]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <441B78C2-E758-3302-8843-976EBE7710F0> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1plus
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-g++: internal compiler error: Abort trap: 6 signal terminated program cc1plus
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: -Wl,-q
+      Id flags: -c 
+      
+      The output was:
+      4
+      dyld[16259]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <441B78C2-E758-3302-8843-976EBE7710F0> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1plus
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-g++: internal compiler error: Abort trap: 6 signal terminated program cc1plus
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: -Wl,-q
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      arm-vita-eabi-g++: error: unrecognized command-line option '--c++'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: -Wl,-q
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      arm-vita-eabi-g++: error: unrecognized command-line option '--ec++'; did you mean '-Weffc++'?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: -Wl,-q
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      arm-vita-eabi-g++: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: -Wl,-q
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      4
+      dyld[16264]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <441B78C2-E758-3302-8843-976EBE7710F0> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1plus
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-g++: internal compiler error: Abort trap: 6 signal terminated program cc1plus
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      4
+      dyld[16266]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <441B78C2-E758-3302-8843-976EBE7710F0> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1plus
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-g++: internal compiler error: Abort trap: 6 signal terminated program cc1plus
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      4
+      dyld[16268]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <441B78C2-E758-3302-8843-976EBE7710F0> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1plus
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-g++: internal compiler error: Abort trap: 6 signal terminated program cc1plus
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      arm-vita-eabi-g++: error: unrecognized command-line option '--c++'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      arm-vita-eabi-g++: error: unrecognized command-line option '--ec++'; did you mean '-Weffc++'?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      arm-vita-eabi-g++: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      4
+      dyld[16273]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <441B78C2-E758-3302-8843-976EBE7710F0> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1plus
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-g++: internal compiler error: Abort trap: 6 signal terminated program cc1plus
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      /usr/local/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/ld: /usr/local/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib/crt0.o: in function `_start':
+      crt0.c:(.text._start+0x56): undefined reference to `main'
+      collect2: error: ld returned 1 exit status
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      arm-vita-eabi-g++: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:13 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/loopy/Developer/mmarrsf/epub_reader/build/CMakeFiles/CMakeScratch/TryCompile-6O61kQ"
+      binary: "/Users/loopy/Developer/mmarrsf/epub_reader/build/CMakeFiles/CMakeScratch/TryCompile-6O61kQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wl,-q"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,nocopyreloc"
+      SHOWED_DEPRECATION_WARNING: "On"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/loopy/Developer/mmarrsf/epub_reader/build/CMakeFiles/CMakeScratch/TryCompile-6O61kQ'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_937e7/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_937e7.dir/build.make CMakeFiles/cmTC_937e7.dir/build
+        Building C object CMakeFiles/cmTC_937e7.dir/CMakeCCompilerABI.c.obj
+        /usr/local/vitasdk/bin/arm-vita-eabi-gcc   -Wl,-q  -o CMakeFiles/cmTC_937e7.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        dyld[16289]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+          Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+          Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+        arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+        Please submit a full bug report,
+        with preprocessed source if appropriate.
+        See <https://gcc.gnu.org/bugs/> for instructions.
+        make[1]: *** [CMakeFiles/cmTC_937e7.dir/CMakeCCompilerABI.c.obj] Error 4
+        make: *** [cmTC_937e7/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:13 (project)"
+    checks:
+      - "Check for working C compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc"
+    directories:
+      source: "/Users/loopy/Developer/mmarrsf/epub_reader/build/CMakeFiles/CMakeScratch/TryCompile-0q9DIH"
+      binary: "/Users/loopy/Developer/mmarrsf/epub_reader/build/CMakeFiles/CMakeScratch/TryCompile-0q9DIH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wl,-q"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,nocopyreloc"
+      SHOWED_DEPRECATION_WARNING: "On"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/loopy/Developer/mmarrsf/epub_reader/build/CMakeFiles/CMakeScratch/TryCompile-0q9DIH'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_61ae8/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_61ae8.dir/build.make CMakeFiles/cmTC_61ae8.dir/build
+        Building C object CMakeFiles/cmTC_61ae8.dir/testCCompiler.c.obj
+        /usr/local/vitasdk/bin/arm-vita-eabi-gcc   -Wl,-q  -o CMakeFiles/cmTC_61ae8.dir/testCCompiler.c.obj -c /Users/loopy/Developer/mmarrsf/epub_reader/build/CMakeFiles/CMakeScratch/TryCompile-0q9DIH/testCCompiler.c
+        dyld[16296]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+          Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+          Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (no such file), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+        arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+        Please submit a full bug report,
+        with preprocessed source if appropriate.
+        See <https://gcc.gnu.org/bugs/> for instructions.
+        make[1]: *** [CMakeFiles/cmTC_61ae8.dir/testCCompiler.c.obj] Error 4
+        make: *** [cmTC_61ae8/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: -Wl,-q
+      Id flags:  
+      
+      The output was:
+      4
+      dyld[17796]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: -Wl,-q
+      Id flags: -c 
+      
+      The output was:
+      4
+      dyld[17798]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: -Wl,-q
+      Id flags: -Aa 
+      
+      The output was:
+      4
+      dyld[17801]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: -Wl,-q
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      4
+      dyld[17811]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: -Wl,-q
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      arm-vita-eabi-gcc: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: -Wl,-q
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      4
+      dyld[17814]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      4
+      dyld[17816]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      4
+      dyld[17818]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      4
+      dyld[17820]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      4
+      dyld[17822]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      arm-vita-eabi-gcc: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      4
+      dyld[17825]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      /usr/local/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/ld: /usr/local/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib/crt0.o: in function `_start':
+      crt0.c:(.text._start+0x56): undefined reference to `main'
+      collect2: error: ld returned 1 exit status
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+      arm-vita-eabi-gcc: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: -Wl,-q
+      Id flags:  
+      
+      The output was:
+      4
+      dyld[17831]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <441B78C2-E758-3302-8843-976EBE7710F0> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1plus
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-g++: internal compiler error: Abort trap: 6 signal terminated program cc1plus
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: -Wl,-q
+      Id flags: -c 
+      
+      The output was:
+      4
+      dyld[17833]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <441B78C2-E758-3302-8843-976EBE7710F0> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1plus
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-g++: internal compiler error: Abort trap: 6 signal terminated program cc1plus
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: -Wl,-q
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      arm-vita-eabi-g++: error: unrecognized command-line option '--c++'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: -Wl,-q
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      arm-vita-eabi-g++: error: unrecognized command-line option '--ec++'; did you mean '-Weffc++'?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: -Wl,-q
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      arm-vita-eabi-g++: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: -Wl,-q
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      4
+      dyld[17838]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <441B78C2-E758-3302-8843-976EBE7710F0> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1plus
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-g++: internal compiler error: Abort trap: 6 signal terminated program cc1plus
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      4
+      dyld[17840]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <441B78C2-E758-3302-8843-976EBE7710F0> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1plus
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-g++: internal compiler error: Abort trap: 6 signal terminated program cc1plus
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      4
+      dyld[17842]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <441B78C2-E758-3302-8843-976EBE7710F0> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1plus
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-g++: internal compiler error: Abort trap: 6 signal terminated program cc1plus
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      arm-vita-eabi-g++: error: unrecognized command-line option '--c++'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      arm-vita-eabi-g++: error: unrecognized command-line option '--ec++'; did you mean '-Weffc++'?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      arm-vita-eabi-g++: error: unrecognized command-line option '--target=arm-arm-none-eabi'
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/local/vitasdk/bin/arm-vita-eabi-g++ 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      4
+      dyld[17847]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+        Referenced from: <441B78C2-E758-3302-8843-976EBE7710F0> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1plus
+        Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+      arm-vita-eabi-g++: internal compiler error: Abort trap: 6 signal terminated program cc1plus
+      Please submit a full bug report,
+      with preprocessed source if appropriate.
+      See <https://gcc.gnu.org/bugs/> for instructions.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      /usr/local/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/ld: /usr/local/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib/crt0.o: in function `_start':
+      crt0.c:(.text._start+0x56): undefined reference to `main'
+      collect2: error: ld returned 1 exit status
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+      arm-vita-eabi-g++: fatal error: no input files
+      compilation terminated.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:13 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/loopy/Developer/mmarrsf/epub_reader/build/CMakeFiles/CMakeScratch/TryCompile-YERZJi"
+      binary: "/Users/loopy/Developer/mmarrsf/epub_reader/build/CMakeFiles/CMakeScratch/TryCompile-YERZJi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wl,-q"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,nocopyreloc"
+      SHOWED_DEPRECATION_WARNING: "On"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/loopy/Developer/mmarrsf/epub_reader/build/CMakeFiles/CMakeScratch/TryCompile-YERZJi'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2e72b/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2e72b.dir/build.make CMakeFiles/cmTC_2e72b.dir/build
+        Building C object CMakeFiles/cmTC_2e72b.dir/CMakeCCompilerABI.c.obj
+        /usr/local/vitasdk/bin/arm-vita-eabi-gcc   -Wl,-q  -o CMakeFiles/cmTC_2e72b.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        dyld[17859]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+          Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+          Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+        arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+        Please submit a full bug report,
+        with preprocessed source if appropriate.
+        See <https://gcc.gnu.org/bugs/> for instructions.
+        make[1]: *** [CMakeFiles/cmTC_2e72b.dir/CMakeCCompilerABI.c.obj] Error 4
+        make: *** [cmTC_2e72b/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:13 (project)"
+    checks:
+      - "Check for working C compiler: /usr/local/vitasdk/bin/arm-vita-eabi-gcc"
+    directories:
+      source: "/Users/loopy/Developer/mmarrsf/epub_reader/build/CMakeFiles/CMakeScratch/TryCompile-23rXF8"
+      binary: "/Users/loopy/Developer/mmarrsf/epub_reader/build/CMakeFiles/CMakeScratch/TryCompile-23rXF8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wl,-q"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,nocopyreloc"
+      SHOWED_DEPRECATION_WARNING: "On"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/loopy/Developer/mmarrsf/epub_reader/build/CMakeFiles/CMakeScratch/TryCompile-23rXF8'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f3e3a/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f3e3a.dir/build.make CMakeFiles/cmTC_f3e3a.dir/build
+        Building C object CMakeFiles/cmTC_f3e3a.dir/testCCompiler.c.obj
+        /usr/local/vitasdk/bin/arm-vita-eabi-gcc   -Wl,-q  -o CMakeFiles/cmTC_f3e3a.dir/testCCompiler.c.obj -c /Users/loopy/Developer/mmarrsf/epub_reader/build/CMakeFiles/CMakeScratch/TryCompile-23rXF8/testCCompiler.c
+        dyld[17866]: Library not loaded: /usr/local/opt/zstd/lib/libzstd.1.dylib
+          Referenced from: <36C1EDA0-AD1D-3EFC-92F1-26543CED8D57> /usr/local/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/cc1
+          Reason: tried: '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/opt/zstd/lib/libzstd.1.dylib' (no such file), '/usr/local/lib/libzstd.1.dylib' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/libzstd.1.dylib' (no such file, not in dyld cache)
+        arm-vita-eabi-gcc: internal compiler error: Abort trap: 6 signal terminated program cc1
+        Please submit a full bug report,
+        with preprocessed source if appropriate.
+        See <https://gcc.gnu.org/bugs/> for instructions.
+        make[1]: *** [CMakeFiles/cmTC_f3e3a.dir/testCCompiler.c.obj] Error 4
+        make: *** [cmTC_f3e3a/fast] Error 2
+        
+      exitCode: 2
+...
