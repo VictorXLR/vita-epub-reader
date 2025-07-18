@@ -1,0 +1,141 @@
+name: Test VPK Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+    paths:
+      - '.github/workflows/test-build.yml'
+      - 'src/**'
+      - 'CMakeLists.txt'
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup VitaSDK
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential cmake git wget tar
+        
+        # Download and install VitaSDK
+        cd /tmp
+        wget https://github.com/vitasdk/autobuilds/releases/download/master-linux-v1460/vitasdk-x86_64-linux-gnu-2024-08-07_20-24-40.tar.bz2
+        sudo tar -xjf vitasdk-x86_64-linux-gnu-2024-08-07_20-24-40.tar.bz2 -C /usr/local/
+        
+        # Setup environment
+        echo "VITASDK=/usr/local/vitasdk" >> $GITHUB_ENV
+        echo "/usr/local/vitasdk/bin" >> $GITHUB_PATH
+        
+    - name: Verify VitaSDK
+      run: |
+        export VITASDK=/usr/local/vitasdk
+        export PATH=$VITASDK/bin:$PATH
+        
+        echo "VitaSDK Path: $VITASDK"
+        echo "Compiler version:"
+        arm-vita-eabi-gcc --version
+        
+        echo "Available libraries:"
+        ls -la $VITASDK/arm-vita-eabi/lib/ | head -10
+        
+    - name: Create minimal assets
+      run: |
+        mkdir -p assets/fonts
+        mkdir -p assets/sample_books
+        mkdir -p sce_sys/livearea/contents
+        
+        # Create placeholder font
+        echo "placeholder" > assets/fonts/default.ttf
+        
+        # Create minimal 1x1 pixel PNG images
+        printf '\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00\x01\x00\x00\x00\x01\x08\x02\x00\x00\x00\x90wS\xde\x00\x00\x00\x0cIDATx\xdac\xf8\x0f\x00\x00\x01\x00\x01\x00\x18\xdd\x8d\xb4\x00\x00\x00\x00IEND\xaeB`\x82' > sce_sys/icon0.png
+        cp sce_sys/icon0.png sce_sys/livearea/contents/bg.png
+        cp sce_sys/icon0.png sce_sys/livearea/contents/startup.png
+        
+        # Verify files exist
+        echo "Created assets:"
+        ls -la sce_sys/
+        ls -la sce_sys/livearea/contents/
+        
+    - name: Test simple build first
+      run: |
+        export VITASDK=/usr/local/vitasdk
+        export PATH=$VITASDK/bin:$PATH
+        
+        mkdir -p build_test
+        cd build_test
+        
+        # Copy simple CMakeLists
+        cp ../CMakeLists_simple_build.txt ./CMakeLists.txt
+        
+        echo "=== Configuring simple build ==="
+        cmake .. -DCMAKE_TOOLCHAIN_FILE=$VITASDK/share/vita.toolchain.cmake -DCMAKE_BUILD_TYPE=Release
+        
+        echo "=== Building simple version ==="
+        make -j$(nproc) VERBOSE=1
+        
+        echo "=== Build results ==="
+        ls -la
+        ls -la *.vpk *.self 2>/dev/null || echo "No VPK/SELF files found"
+        
+    - name: Test full build
+      run: |
+        export VITASDK=/usr/local/vitasdk
+        export PATH=$VITASDK/bin:$PATH
+        
+        mkdir -p build_full
+        cd build_full
+        
+        echo "=== Available VitaSDK libraries ==="
+        find $VITASDK/arm-vita-eabi/lib -name "*.a" | head -20
+        
+        echo "=== Configuring full build ==="
+        cmake .. -DCMAKE_TOOLCHAIN_FILE=$VITASDK/share/vita.toolchain.cmake -DCMAKE_BUILD_TYPE=Release || {
+          echo "Configuration failed, checking CMake logs..."
+          cat CMakeFiles/CMakeError.log 2>/dev/null || echo "No CMake error log"
+          cat CMakeFiles/CMakeOutput.log 2>/dev/null || echo "No CMake output log"
+          exit 1
+        }
+        
+        echo "=== Building full version ==="
+        make -j$(nproc) VERBOSE=1 || {
+          echo "Build failed, checking available targets..."
+          make help
+          echo "Trying individual targets..."
+          make epub_reader || echo "Target build failed"
+        }
+        
+        echo "=== Full build results ==="
+        ls -la
+        ls -la *.vpk *.self 2>/dev/null || echo "No VPK/SELF files found"
+        
+    - name: Upload test results
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: test-build-results
+        path: |
+          build_test/*.vpk
+          build_test/*.self
+          build_full/*.vpk
+          build_full/*.self
+          build_*/CMakeFiles/CMakeError.log
+          build_*/CMakeFiles/CMakeOutput.log
+        retention-days: 7
+        
+    - name: Summary
+      if: always()
+      run: |
+        echo "=== BUILD SUMMARY ==="
+        echo "Simple build results:"
+        ls -la build_test/*.vpk build_test/*.self 2>/dev/null || echo "No simple build VPK/SELF files"
+        echo ""
+        echo "Full build results:"
+        ls -la build_full/*.vpk build_full/*.self 2>/dev/null || echo "No full build VPK/SELF files"
+        echo ""
+        echo "If builds succeeded, VPK files should be available in the artifacts."

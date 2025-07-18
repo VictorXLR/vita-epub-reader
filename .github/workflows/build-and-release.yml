@@ -11,7 +11,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+    env:
+      VITASDK_URL: https://github.com/vitasdk/autobuilds/releases/download/master-linux-v1460/vitasdk-x86_64-linux-gnu-2024-08-07_20-24-40.tar.bz2
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -24,8 +26,8 @@ jobs:
         
         # Install VitaSDK
         cd /tmp
-        wget https://github.com/vitasdk/autobuilds/releases/download/master-linux-v1460/vitasdk-x86_64-linux-gnu-2024-08-07_20-24-40.tar.bz2
-        sudo tar -xjf vitasdk-x86_64-linux-gnu-2024-08-07_20-24-40.tar.bz2 -C /usr/local/
+        wget "$VITASDK_URL"
+        sudo tar -xjf $(basename "$VITASDK_URL") -C /usr/local/
         
         # Set up environment
         echo "VITASDK=/usr/local/vitasdk" >> $GITHUB_ENV

@@ -21,10 +21,11 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y build-essential cmake git wget tar python3 python3-pip
         
-        # Install VitaSDK
+        # Install VitaSDK (fetch latest release dynamically)
         cd /tmp
-        wget https://github.com/vitasdk/autobuilds/releases/download/master-linux-v1460/vitasdk-x86_64-linux-gnu-2024-08-07_20-24-40.tar.bz2
-        sudo tar -xjf vitasdk-x86_64-linux-gnu-2024-08-07_20-24-40.tar.bz2 -C /usr/local/
+        VITASDK_URL=$(curl -s https://api.github.com/repos/vitasdk/autobuilds/releases/latest | grep "browser_download_url.*vitasdk-x86_64-linux-gnu" | cut -d '"' -f 4)
+        wget "$VITASDK_URL" -O vitasdk.tar.bz2
+        sudo tar -xjf vitasdk.tar.bz2 -C /usr/local/
         
         # Set up environment
         echo "VITASDK=/usr/local/vitasdk" >> $GITHUB_ENV
@@ -195,29 +196,115 @@ jobs:
           3. Launch from LiveArea
           
           ## Your Vita IP
-          Based on previous connection: 192.168.1.195
+          Replace `<YOUR_VITA_IP>` with your PS Vita's IP address.
           
           ## Deploy Command
           ```bash
-          curl -T epub_reader.vpk "ftp://192.168.1.195:1337/ux0:/vpk/"
+          curl -T epub_reader.vpk "ftp://$VITA_IP:1337/ux0:/vpk/"
+          ```
           ```
           EOF
           
           echo "Deployment package created"
         fi
         
-    - name: Deploy to Vita (if IP provided)
+    - name: Create filesystem deployment package
       if: success() && github.event_name == 'push'
       run: |
         cd build
         if [ -f "epub_reader.vpk" ]; then
-          echo "Attempting to deploy to Vita at 192.168.1.195"
+          mkdir -p vita_deploy
+          cp epub_reader.vpk vita_deploy/
           
-          # Test connectivity first
-          if ping -c 1 192.168.1.195 > /dev/null 2>&1; then
-            echo "Vita is reachable, attempting FTP upload..."
-            curl -T epub_reader.vpk "ftp://192.168.1.195:1337/ux0:/vpk/" --connect-timeout 10 || echo "FTP upload failed - ensure FTP server is running"
-          else
-            echo "Vita not reachable at 192.168.1.195"
-          fi
+          # Create filesystem deployment script for Linux/macOS
+          cat > vita_deploy/deploy_filesystem.sh << 'EOF'
+#!/bin/bash
+# Filesystem deployment script for PS Vita EPUB Reader
+
+VITA_MOUNT_POINT="/mnt/vita"  # Adjust this path as needed
+VPK_FILE="epub_reader.vpk"
+
+echo "=== PS Vita EPUB Reader Filesystem Deployment ==="
+
+if [ ! -f "$VPK_FILE" ]; then
+    echo "ERROR: $VPK_FILE not found in current directory"
+    exit 1
+fi
+
+if [ ! -d "$VITA_MOUNT_POINT" ]; then
+    echo "ERROR: Vita mount point $VITA_MOUNT_POINT not found"
+    echo "Please mount your Vita's filesystem first:"
+    echo "  1. Connect Vita to PC via USB"
+    echo "  2. Enable USB mode in VitaShell (START + SELECT)"
+    echo "  3. Mount the filesystem to $VITA_MOUNT_POINT"
+    exit 1
+fi
+
+VPK_DIR="$VITA_MOUNT_POINT/vpk"
+if [ ! -d "$VPK_DIR" ]; then
+    echo "Creating VPK directory: $VPK_DIR"
+    mkdir -p "$VPK_DIR"
+fi
+
+echo "Copying $VPK_FILE to Vita..."
+cp "$VPK_FILE" "$VPK_DIR/"
+
+if [ $? -eq 0 ]; then
+    echo "SUCCESS: VPK copied to $VPK_DIR/$VPK_FILE"
+    echo "Next steps:"
+    echo "  1. Safely eject the Vita"
+    echo "  2. Disable USB mode in VitaShell"
+    echo "  3. Navigate to ux0:/vpk/ in VitaShell"
+    echo "  4. Press X on epub_reader.vpk to install"
+else
+    echo "ERROR: Failed to copy VPK file"
+    exit 1
+fi
+EOF
+
+          chmod +x vita_deploy/deploy_filesystem.sh
+          
+          # Create Windows batch script
+          cat > vita_deploy/deploy_filesystem.bat << 'EOF'
+@echo off
+set VITA_DRIVE=E:
+set VPK_FILE=epub_reader.vpk
+
+echo === PS Vita EPUB Reader Filesystem Deployment ===
+
+if not exist "%VPK_FILE%" (
+    echo ERROR: %VPK_FILE% not found in current directory
+    pause
+    exit /b 1
+)
+
+if not exist "%VITA_DRIVE%\" (
+    echo ERROR: Vita drive %VITA_DRIVE% not found
+    echo Please connect your Vita and enable USB mode
+    pause
+    exit /b 1
+)
+
+if not exist "%VITA_DRIVE%\vpk\" (
+    mkdir "%VITA_DRIVE%\vpk"
+)
+
+echo Copying %VPK_FILE% to Vita...
+copy "%VPK_FILE%" "%VITA_DRIVE%\vpk\"
+
+if %errorlevel% equ 0 (
+    echo SUCCESS: VPK copied to %VITA_DRIVE%\vpk\%VPK_FILE%
+    echo Next steps:
+    echo   1. Safely eject the Vita
+    echo   2. Disable USB mode in VitaShell
+    echo   3. Navigate to ux0:/vpk/ in VitaShell
+    echo   4. Press X on epub_reader.vpk to install
+) else (
+    echo ERROR: Failed to copy VPK file
+)
+
+pause
+EOF
+
+          echo "Filesystem deployment package created"
         fi
